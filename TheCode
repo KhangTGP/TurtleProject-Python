@@ -1,0 +1,93 @@
+from turtle import*
+speed(7)
+key = input('Enter a Keyword:')
+
+def indo_ga_bap(key):
+    
+        pensize(2)
+        color('red')
+        begin_fill()
+        left(90)
+        forward(50)
+        right(90)
+        forward(150)
+        right(90)
+        forward(50)
+        right(90)
+        forward(150)
+        left(90)
+        end_fill()
+        color('black')
+        forward(50)
+        left(90)
+        forward(150)
+        left(90)
+        
+        forward(50)
+        left(90)
+        forward(150)
+    
+    
+def i_love_poland(key):    
+        pensize(2)
+        color('black')
+        left(90)
+        forward(50)
+        right(90)
+        forward(150)
+        right(90)
+        forward(50)
+        right(90)
+        forward(150)
+        left(90)
+        color('red')
+        begin_fill()
+        forward(50)
+        left(90)
+        forward(150)
+        left(90)
+        forward(50)
+        left(90)
+        forward(150)
+        end_fill()
+        
+while key != "Off":
+    if key != 'Piece' and key != 'Indonesia' and key != 'Poland':
+        print("Sorry, we don't have that in our library. We try to improve more.")
+    if key == 'Off':
+        print("Cya!")
+    if key == 'Piece':
+        clear()
+        forward(150)
+        left(90)
+        forward(100)
+        left(90)
+        forward(150)
+        left(90)
+        forward(150)
+
+        color('yellow')
+        pensize(2)
+        begin_fill()
+        for i in range(5):
+            forward(150)
+            right(144)
+        end_fill()
+        hideturtle()
+        exitonclick()
+
+    if key == 'Indonesia':
+        clear()
+        indo_ga_bap(key)
+
+    if key == 'Poland':
+        clear()
+        i_love_poland(key)
+
+    key = input('Enter a Keyword:')
+
+
+    
+exitonclick()
+
+
